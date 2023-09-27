@@ -5,4 +5,6 @@ export default function handler(
   res: NextApiResponse
 ) {
   console.log({ host: req.headers.host, cookies: req.headers.cookie })
+
+  res.status(404).end()
 }
